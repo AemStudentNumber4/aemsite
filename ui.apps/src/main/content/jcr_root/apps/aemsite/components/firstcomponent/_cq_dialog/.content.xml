@@ -41,27 +41,36 @@
                             sling:resourceType="granite/ui/components/foundation/form/select"
                             class="cq-dialog-dropdown-showhide"
                             cq-dialog-dropdown-showhide-target=".test-options-showhide-target"
+                            fieldDescription="Choose the type of button"
                             fieldLabel="Button Type"
                             name="./optionsType">
                         <items jcr:primaryType="nt:unstructured">
                             <buttonstyle1
                                     jcr:primaryType="nt:unstructured"
                                     name="./jcr:buttonstyle1"
-                                    text="Style 1"
+                                    text="Oval"
                                     value="oval-button"/>
                             <buttonstyle2
                                     jcr:primaryType="nt:unstructured"
                                     name="./jcr:buttonstyle2"
-                                    text="Style 2"
+                                    text="Rectangle"
                                     value="rectangle-button"/>
                         </items>
                     </list>
                     <text
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldDescription="Text"
+                            fieldDescription="Enter text"
                             fieldLabel="Text"
                             name="./jcr:text"/>
+                    <checkbox
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                            fieldDescription="Change the word &quot;positive&quot; to &quot;Alladin&quot;"
+                            fieldLabel="Text"
+                            name="./jcr:checkbox"
+                            text="Checkbox"
+                            value="true"/>
                 </items>
             </column>
         </items>
