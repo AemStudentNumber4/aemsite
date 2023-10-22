@@ -1,0 +1,11 @@
+.oval-button {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.rectangle-button {
+  border-radius: 0%;
+  background-color: blue;
+  color: white;
+}
