@@ -1,3 +1,7 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='firstclientlib'}"></sly>
+</sly>
+
 <div data-sly-test="${properties.myImageTopPath}" class="image-container">
     <img src="${properties.myImageTopPath}" alt="Image">
 </div>
@@ -6,15 +10,15 @@
 
     <a data-sly-test="${(properties.jcr:buttonlink && properties.myImageTopPath && properties.jcr:buttontitle)}"
        href="https://${properties.jcr:buttonlink}" target="_blank">
-        <button>${properties.jcr:buttontitle}</button>
+        <button class="${properties.optionsType}">${properties.jcr:buttontitle}</button>
     </a>
 
     <a data-sly-test="${(!properties.jcr:buttonlink || !properties.myImageTopPath || !properties.jcr:buttontitle)}">
-        <button disabled>${properties.jcr:buttontitle ? properties.jcr:buttontitle : 'Button title by deafault'}</button>
+        <button class="${properties.optionsType}" disabled>${properties.jcr:buttontitle ? properties.jcr:buttontitle : 'Button title by deafault'}</button>
     </a>
 
 </div>
 
-<div class="text-container">
+<div class="text-container" data-should-modify="${properties.jcr:checkbox}">
     <p>${properties.jcr:text}</p>
 </div>
