@@ -2,6 +2,10 @@
     <sly data-sly-call="${clientlib.all @ categories='firstclientlib'}"></sly>
 </sly>
 
+<div data-sly-use.DemoResource="com.aemsite.core.models.DemoResource">
+    ${DemoResource.message}
+</div>
+
 <div data-sly-test="${properties.myImageTopPath}" class="image-container">
     <img src="${properties.myImageTopPath}" alt="Image">
 </div>
