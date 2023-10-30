@@ -66,10 +66,10 @@
                     <checkbox
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                            fieldDescription="Change the word &quot;positive&quot; to &quot;Alladin&quot;"
+                            fieldDescription="This checkbox enable the js logic, what change the word &quot;positive&quot; to &quot;Alladin&quot;"
                             fieldLabel="Text"
                             name="./jcr:checkbox"
-                            text="Checkbox"
+                            text="Change words?"
                             value="true"/>
                 </items>
             </column>
