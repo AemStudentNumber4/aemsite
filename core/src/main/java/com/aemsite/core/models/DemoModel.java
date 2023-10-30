@@ -7,7 +7,7 @@ import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(adaptables = Resource.class)
-public class DemoResource {
+public class DemoModel {
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     @Default(values = "No message")
     private String message;
