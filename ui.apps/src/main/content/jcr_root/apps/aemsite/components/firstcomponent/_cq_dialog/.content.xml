@@ -32,9 +32,9 @@
                             name="./jcr:buttontitle"/>
                     <buttonlink
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldDescription="The link to the destination."
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                             fieldLabel="Button Link"
+                            fieldDescription="The link to the destination."
                             name="./jcr:buttonlink"/>
                     <list
                             jcr:primaryType="nt:unstructured"
