@@ -26,8 +26,16 @@ public class DemoServlet extends SlingSafeMethodsServlet {
                          final SlingHttpServletResponse resp) throws ServletException, IOException {
 
         Resource resource = req.getResource();
+        String propertyKey = "servletMessage";
 
         resp.setContentType("text/plain");
-        resp.getWriter().write(resource.getValueMap().get("servletMessage").toString());
+        if (resource.getValueMap().get(propertyKey) != null) {
+            resp.getWriter().write(resource.getValueMap().get(propertyKey).toString());
+        } else {
+            resp.getWriter().write("Property with the key " + propertyKey + " doesn't exist!" );
+        }
+
+
+
     }
 }
